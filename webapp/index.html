@@ -3,38 +3,31 @@
 <head>
  <link rel="icon" href="/img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zeven Linden Checkin</title>
+  <title>CheckIn Scanner</title>
+  
   <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous">
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
 <style>
-
 body {padding:0;margin:0px;background-color: #000000; color: #ffffff;}
-
 #wallet{
   height:80%;
   padding-top: 50px;
 }
-
 #wallet img {
   height:80px;
 }
-
 #wallet #ammount {
   padding-top:10px;
   font-size: 2.2em;
 }
-
-#send {
-
-}
-
-#pay{
-
-}
-
 #content {
     position:absolute;
     top:70px; /* make this equal to the height of your header tag */
@@ -49,8 +42,7 @@ body {padding:0;margin:0px;background-color: #000000; color: #ffffff;}
 #header {
     height:70px;
     background-color: #88BA3F;
-    position:relative;
-    
+    position:relative;  
 }
 
 #header SPAN {position:absolute;}
@@ -96,7 +88,6 @@ body {padding:0;margin:0px;background-color: #000000; color: #ffffff;}
 #video-container {
    margin-top:20px;
    line-height: 0;
-
 }
 
 
@@ -168,16 +159,15 @@ body {padding:0;margin:0px;background-color: #000000; color: #ffffff;}
 <body>
 	
     <div id="header">
-        <img src="/images/newlogzl.png">
+        <img src="/img/logo.png">
         <div class="centerPage">
             QR Checkin app
         </div>
     </div>
   
-        
     
     <div  id="content">
-    	
+  	
     <button id="startbutton" class="btn btn-success">Start Scanner</button>
 
     <div id="scanner">
@@ -217,18 +207,20 @@ body {padding:0;margin:0px;background-color: #000000; color: #ffffff;}
       &copy Zeven Linden College
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous">
+    </script>
 
 
 
 
 
   <script type="module">
-   const audio = new Audio("/img/iphone-camera-capture-6448.mp3");
+   const audio = new Audio("/img/camera-capture.mp3");
    
    const url="https://script.google.com/macros/s/AKfycbxOjAOs8oJ55_H_5FlKqxMQZXowb6PaDN1Unm9o-LsoS1-tJKbhw9jNkQTuCnLnP9cMuw/exec";
    import QrScanner from "/js/qr-scanner.min.js";
-
 
    const camQrResult = document.getElementById('qr-result');
    const camHasCamera = document.getElementById('has-camera');
